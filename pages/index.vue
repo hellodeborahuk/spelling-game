@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto max-w-screen-sm bg-teal-200 m-6 px-6 lg:px-0 rounded-lg">
+    <div class="mx-auto max-w-screen-sm bg-slate-800 text-white m-6 px-6 lg:px-0 rounded-lg">
         <div class="p-6 space-y-6 text-center">
             <h1>Year 2 Spellings</h1>
             <p>Look Cover Write Check</p>
@@ -8,13 +8,14 @@
                 <span v-if="wordVisible">{{ word }}</span>
                 <span v-else class="tracking-wider">{{ hiddenWord }}</span>
             </template>
-                <span v-else>Well done!</span>
+                <span class="text-amber-400" v-else><v-icon name="gi-party-popper" class="w-14 h-14 text-pink-400" />Well done!<v-icon name="gi-party-popper" class="w-14 h-14 text-pink-400 scale-x-[-1]" /></span>
         </div>
         <form @submit.prevent="nextWord" class="flex justify-between gap-10">
-            <input v-model="answer" class="w-full py-3 text-4xl">
-            <span v-if="isCorrect">tick</span>
-            <button :disabled="!isCorrect" @click="nextWord" type="button">Next</button>
+            <input v-model="answer" class="w-2/3 py-3 text-4xl text-slate-800">
+            <span v-if="isCorrect"><v-icon name="fa-check" fill="currentColor" class="text-pink-400 w-14 h-14"/></span>
+            <button :disabled="!isCorrect" @click="nextWord" type="button" class="bg-amber-400 rounded-lg px-4 text-slate-800 text-2xl font-semibold disabled:bg-amber-400/50 hover:bg-pink-400 ease-in duration-150">next</button>
         </form>
+        <button @click="playAgain" v-if="isComplete" class="bg-pink-400 rounded-lg px-4 py-2 text-slate-800 text-2xl font-semibold hover:bg-amber-400 ease-in duration-150">play again <v-icon name="md-replay" class="w-6 h-6" /></button>
     </div>
        
     </div>
@@ -37,10 +38,11 @@
         })
         return incompleteWords[Math.floor(Math.random()*incompleteWords.length)]
     }
-    onMounted(() => {
+
+    const beginGame = () => {
         wordSet.value = words.sort(() => Math.random() - 0.5).slice(0,6)
         word.value = randomWord()
-    })
+    }
 
     const answer = ref('')
     
@@ -66,5 +68,11 @@
     const isComplete = computed(() => {
         return word.value.length > 0 && done.value.length === wordSet.value.length
     })
+
+    const playAgain = computed(() => {
+        done.value = []
+        beginGame()
+    })
+    beginGame()
    
 </script>
