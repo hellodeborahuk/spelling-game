@@ -49,7 +49,7 @@
     const answer = ref('')
     
     const isCorrect = computed(() => {
-        return answer.value.trim() === word.value
+        return answer.value.trim().toLocaleLowerCase() === word.value
     })
 
     const wordVisible = computed(() => {
