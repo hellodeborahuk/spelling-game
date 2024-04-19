@@ -22,3 +22,7 @@ export const words = [
 "every",
 "everybody", "old"
 ];
+
+export const randomWords = (num = 6) => {
+    return words.sort(() => Math.random() - 0.5).slice(0,num);
+};
