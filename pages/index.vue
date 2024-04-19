@@ -3,7 +3,7 @@
         <div class="p-6 text-center">
             <h1 class="text-3xl text-amber-400 font-bold mb-2">Year 2 Spellings</h1>
             <p class="tracking-wide text-2xl font-medium mb-6">Look Cover Write Check</p>
-            <div class="text-6xl border border-pink-400 py-8 rounded-lg mb-6">
+            <div class="text-5xl md:text-6xl border border-pink-400 py-8 rounded-lg mb-6">
                 <template v-if="!isComplete">
                     <span v-if="wordVisible">{{ word }}</span>
                     <span v-else class="tracking-wider">{{ hiddenWord }}</span>
