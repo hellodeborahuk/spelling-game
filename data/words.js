@@ -11,7 +11,7 @@ export const words = [
 "busy", "hold", "prove",
 "child", "hour", "should",
 "children", "improve", "steak",
-"Christmas", "kind", "sugar",
+"christmas", "kind", "sugar",
 "class", "last", "sure",
 "climb", "many", "told",
 "clothes", "mind", "water",
