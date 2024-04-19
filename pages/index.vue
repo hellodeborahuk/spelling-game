@@ -75,10 +75,10 @@
         return word.value.length > 0 && done.value.length === wordSet.value.length
     })
 
-    const playAgain = computed(() => {
+    const playAgain = () => {
         done.value = []
         beginGame()
-    })
+    }
+
     beginGame()
-   
 </script>
