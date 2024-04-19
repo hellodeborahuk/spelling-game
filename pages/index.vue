@@ -12,7 +12,7 @@
                         <span class="text-amber-400 " v-else><v-icon name="gi-party-popper" class="w-8 h-8 md:w-14 md:h-14 text-pink-400" />Well done!<v-icon name="gi-party-popper" class="w-8 h-8 md:w-14 md:h-14 text-pink-400 scale-x-[-1]" /></span>
                 </div>
                 <form @submit.prevent="nextWord" class="flex flex-col md:flex-row justify-between gap-4">
-                    <input v-model="answer" v-if="!isComplete" class="w-full md:w-2/3 py-3 text-3xl md:text-4xl text-slate-800 rounded-lg px-4" placeholder="type here">
+                    <input v-model="answer" v-if="!isComplete" class="w-full md:w-2/3 h-20 text-3xl md:text-4xl text-slate-800 rounded-lg px-4" placeholder="type here">
                     <div v-if="!isComplete" class="flex items-center justify-center gap-4">
                         <span v-if="isCorrect"><v-icon name="fa-check" fill="currentColor" class="text-pink-400 w-14 h-14"/></span>
                         <span v-else-if="wrongAnswer"><v-icon name="fa-times" fill="currentColor" class="text-pink-400 w-14 h-14"/></span>
