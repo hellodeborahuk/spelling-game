@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto max-w-screen-sm bg-slate-800 text-white m-6 px-6 lg:px-0 rounded-lg">
+    <div class="mx-auto max-w-screen-sm bg-slate-800 text-white min-h-svh md:min-h-min md:mt-6 p-6 lg:px-0 rounded-lg">
         <div class="p-6 text-center">
             <h1 class="text-3xl text-amber-400 font-bold mb-2">Year 2 Spellings</h1>
             <p class="tracking-wide text-2xl font-medium mb-6">Look Cover Write Check</p>
@@ -11,8 +11,8 @@
                     <span class="text-amber-400" v-else><v-icon name="gi-party-popper" class="w-14 h-14 text-pink-400" />Well done!<v-icon name="gi-party-popper" class="w-14 h-14 text-pink-400 scale-x-[-1]" /></span>
             </div>
             <form @submit.prevent="nextWord" class="flex flex-col md:flex-row justify-between gap-4">
-                <input v-model="answer" class="w-full md:w-2/3 py-3 text-4xl text-slate-800 rounded-lg px-4">
-                <div class="flex items-center justify-center gap-4">
+                <input v-model="answer" v-if="!isComplete" class="w-full md:w-2/3 py-3 text-3xl md:text-4xl text-slate-800 rounded-lg px-4" placeholder="type here">
+                <div v-if="!isComplete" class="flex items-center justify-center gap-4">
                     <span v-if="isCorrect"><v-icon name="fa-check" fill="currentColor" class="text-pink-400 w-14 h-14"/></span>
                     <span v-else-if="wrongAnswer"><v-icon name="fa-times" fill="currentColor" class="text-pink-400 w-14 h-14"/></span>
                     <button :disabled="!isCorrect" @click="nextWord" type="button" class="bg-amber-400 rounded-lg px-4 py-2 text-slate-800 text-2xl font-semibold disabled:bg-amber-400/50 hover:bg-pink-400 ease-in duration-150">next</button>
