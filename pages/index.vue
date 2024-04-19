@@ -69,7 +69,7 @@
             return
         }
         wrongAnswer.value = false
-        done.value.push(answer.value)
+        done.value.push(answer.value.toLocaleLowerCase().trim())
         answer.value=''
         if (done.value.length !== wordSet.value.length) {
         word.value = randomWord()
