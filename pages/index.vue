@@ -3,12 +3,12 @@
         <div class="p-6 text-center">
             <h1 class="text-3xl text-amber-400 font-bold mb-2">Year 2 Spellings</h1>
             <p class="tracking-wide text-2xl font-medium mb-6">Look Cover Write Check</p>
-            <div class="text-5xl md:text-6xl border border-pink-400 py-8 rounded-lg mb-6">
+            <div class="text-3xl md:text-6xl border border-pink-400 py-8 rounded-lg mb-6">
                 <template v-if="!isComplete">
                     <span v-if="wordVisible">{{ word }}</span>
                     <span v-else class="tracking-wider">{{ hiddenWord }}</span>
                 </template>
-                    <span class="text-amber-400" v-else><v-icon name="gi-party-popper" class="w-14 h-14 text-pink-400" />Well done!<v-icon name="gi-party-popper" class="w-14 h-14 text-pink-400 scale-x-[-1]" /></span>
+                    <span class="text-amber-400 " v-else><v-icon name="gi-party-popper" class="w-8 h-8 md:w-14 md:h-14 text-pink-400" />Well done!<v-icon name="gi-party-popper" class="w-8 h-8 md:w-14 md:h-14 text-pink-400 scale-x-[-1]" /></span>
             </div>
             <form @submit.prevent="nextWord" class="flex flex-col md:flex-row justify-between gap-4">
                 <input v-model="answer" v-if="!isComplete" class="w-full md:w-2/3 py-3 text-3xl md:text-4xl text-slate-800 rounded-lg px-4" placeholder="type here">
