@@ -20,6 +20,7 @@
             </form>
             <button @click="playAgain" v-if="isComplete" class="mt-4 md:mt-6 bg-pink-400 rounded-lg px-4 py-2 text-slate-800 text-2xl font-semibold hover:bg-amber-400 ease-in duration-150">play again <v-icon name="md-replay" class="w-6 h-6" /></button>
         </div>
+        <span>v1</span>
        
     </div>
 </template>
