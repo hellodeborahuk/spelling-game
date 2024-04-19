@@ -1,75 +1,25 @@
-# Nuxt 3 Minimal Starter
+# Spelling Game
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+![image](https://github.com/hellodeborahuk/spelling-game/assets/29425781/9d2ea78e-e885-4a89-9b58-e49aa3353591)
 
-## Setup
+## Demo
 
-Make sure to install the dependencies:
+Check out the website: [Spelling game](https://buzzphonics2.netlify.app/)
 
-```bash
-# npm
-npm install
+## About the project
 
-# pnpm
-pnpm install
+A spelling game for my daughter using Year 2 tricky words. She's often reluctant to do spelling but she loved my [Buzzphonics games](https://github.com/hellodeborahuk/buzzphonics) so I thought I'd create this for her.
 
-# yarn
-yarn install
+## Tech used
 
-# bun
-bun install
-```
+- Vue 3/Nuxt 3
+- Tailwind CSS
 
-## Development Server
+## Contact
 
-Start the development server on `http://localhost:3000`:
+Debbie Dann @debbie_digital on X
 
-```bash
-# npm
-npm run dev
+## Other images
 
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+![image](https://github.com/hellodeborahuk/spelling-game/assets/29425781/0cac8b79-e510-4ea9-b683-5f77bd61d5de)
+![image](https://github.com/hellodeborahuk/spelling-game/assets/29425781/0424aa6b-851a-4742-a0db-a1547c888156)
