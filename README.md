@@ -1,6 +1,5 @@
 # Spelling Game
-
-![image](https://github.com/hellodeborahuk/spelling-game/assets/29425781/9d2ea78e-e885-4a89-9b58-e49aa3353591)
+![spelling game](https://github.com/hellodeborahuk/spelling-game/assets/29425781/50600894-b5c4-4925-bf2b-6c05f52cb86c)
 
 ## Demo
 
@@ -20,6 +19,6 @@ A spelling game for my daughter using Year 2 tricky words. She's often reluctant
 Debbie Dann @debbie_digital on X
 
 ## Other images
-
+![image](https://github.com/hellodeborahuk/spelling-game/assets/29425781/9d2ea78e-e885-4a89-9b58-e49aa3353591)
 ![image](https://github.com/hellodeborahuk/spelling-game/assets/29425781/0cac8b79-e510-4ea9-b683-5f77bd61d5de)
 ![image](https://github.com/hellodeborahuk/spelling-game/assets/29425781/0424aa6b-851a-4742-a0db-a1547c888156)
